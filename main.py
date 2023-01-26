@@ -189,6 +189,9 @@ def statistics_game():
         if int(k) <= rating:
             title[0] = v["TITLE"]
             title[1] = v["COLOR"]
+    if title[1] == "":
+        title[0] = "нет звания :("
+        title[1] = "#EBAEAE"
     text = "Статистика игры"
     text1 = "Общие сведения:"
     text2 = "◆ Rating:"
