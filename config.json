@@ -1,0 +1,71 @@
+{
+    "MODE": {
+        "OFFICIAL": true,
+        "CUSTOM": false,
+        "DEBUG": false
+    },
+    "WINDOWS_SETTINGS": {
+        "X_MIN": 1280,
+        "Y_MIN": 720,
+        "FPS": 60,
+        "PLAYER_SIZE": [
+            50,
+            50
+        ],
+        "PLAYER_MAX_SPEED": 22,
+        "PLAYER_JUMPFORCE": 22,
+        "PLAYER_BONUS_JUMPFORCE": 70,
+        "GRAVITY": ".98"
+    },
+    "TEXTURE_SETTINGS": {
+        "PLATFORMS": "platform.png",
+        "PLATFORMS_BREAKABLE": "platform_breakable.png",
+        "TRAMPOLINE": "TRAMPOLINE.png",
+        "PLAYER_LEFT": "player_left.png",
+        "PLAYER_RIGHT": "player_right.png"
+    },
+    "SYSTEM_LEVELS": {
+        "1": {
+            "SCORE": 0,
+            "CHANCE_BREAKABLE_PLATFORM": 3,
+            "CHANCE_BONUS_SPAWN": 40,
+            "MAX_PLATFORM_NUMBER": 20
+        },
+        "2": {
+            "SCORE": 100,
+            "CHANCE_BREAKABLE_PLATFORM": 5,
+            "CHANCE_BONUS_SPAWN": 30,
+            "MAX_PLATFORM_NUMBER": 20
+        },
+        "3": {
+            "SCORE": 200,
+            "CHANCE_BREAKABLE_PLATFORM": 10,
+            "CHANCE_BONUS_SPAWN": 20,
+            "MAX_PLATFORM_NUMBER": 20
+        },
+        "4": {
+            "SCORE": 400,
+            "CHANCE_BREAKABLE_PLATFORM": 15,
+            "CHANCE_BONUS_SPAWN": 15,
+            "MAX_PLATFORM_NUMBER": 20
+        },
+        "5": {
+            "SCORE": 800,
+            "CHANCE_BREAKABLE_PLATFORM": 20,
+            "CHANCE_BONUS_SPAWN": 10,
+            "MAX_PLATFORM_NUMBER": 20
+        },
+        "6": {
+            "SCORE": 1600,
+            "CHANCE_BREAKABLE_PLATFORM": 25,
+            "CHANCE_BONUS_SPAWN": 5,
+            "MAX_PLATFORM_NUMBER": 20
+        },
+        "7": {
+            "SCORE": 3200,
+            "CHANCE_BREAKABLE_PLATFORM": 30,
+            "CHANCE_BONUS_SPAWN": 2,
+            "MAX_PLATFORM_NUMBER": 20
+        }
+    }
+}
