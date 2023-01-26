@@ -73,34 +73,34 @@ UTF_FONT = pygame.font.Font(f"{os.getcwd()}/resources/models/segoe-ui-symbol.ttf
 SYSTEM_LEVELS = dict(json_config["SYSTEM_LEVELS"])
 SYSTEM_RATED = {
     "0": {
-        "TITLE": "Новичек",
+        "TITLE": "Новичок",
         "COLOR": "#02F2F2"
     },
-    "100": {
+    "20": {
         "TITLE": "Ученик",
         "COLOR": "#02F20E"
     },
-    "350": {
+    "90": {
         "TITLE": "Специалист",
         "COLOR": "#0272F2"
     },
-    "660": {
+    "200": {
         "TITLE": "Эксперт",
         "COLOR": "#0242F2"
     },
-    "900": {
+    "600": {
         "TITLE": "Кандидат в мастера",
         "COLOR": "#9602F2"
     },
-    "1100": {
+    "950": {
         "TITLE": "Мастер",
         "COLOR": "#F2C202"
     },
-    "1550": {
+    "1400": {
         "TITLE": "Кондидат в гроссмейстеры",
         "COLOR": "#E34800"
     },
-    "2200": {
+    "2000": {
         "TITLE": "Гроссмейстер",
         "COLOR": "#DE1102"
     },
@@ -108,7 +108,7 @@ SYSTEM_RATED = {
         "TITLE": "Международный гроссмейстер",
         "COLOR": "#6B0700"
     },
-    "3200": {
+    "3500": {
         "TITLE": "Легендарный гроссмейстер",
         "COLOR": "#E00099"
     },

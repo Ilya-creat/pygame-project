@@ -180,10 +180,11 @@ def statistics_game():
         if int(get_max[1]) <= i[1] and i[5] != "custom":
             get_max[0] = str(i[0])
             get_max[1] = str(i[1])
-            get_max[3] = str(i[2]) + " сек."
-            get_max[2] = str(i[3])
+            get_max[2] = str(i[3]) + " сек."
+            get_max[3] = str(i[2])
             get_max[4] = str(i[4])
-        rating += i[4]
+        if i[5] != "custom":
+            rating += i[4]
     title = ["", ""]
     for k, v in config.SYSTEM_RATED.items():
         if int(k) <= rating:
@@ -247,8 +248,8 @@ def statistics_game():
             k = [0, 0, 0, 0, [0, 0]]
             k[0] = config.INFO_FONT_F.render(str(i[0]), 1, config.WHITE)
             k[1] = config.INFO_FONT_F.render(str(i[1]), 1, config.WHITE)
-            k[3] = config.INFO_FONT_F.render(str(i[2]), 1, config.WHITE)
-            k[2] = config.INFO_FONT_F.render(str(i[3]), 1, config.WHITE)
+            k[2] = config.INFO_FONT_F.render(str(i[2]), 1, config.WHITE)
+            k[3] = config.INFO_FONT_F.render(str(i[3]), 1, config.WHITE)
             k[4][0] = config.INFO_FONT_F.render(str(i[4]) if i[4] >= 0 else str(i[4])[1:], 1, config.WHITE)
             k[4][1] = i[4]
             ans.append(k)
