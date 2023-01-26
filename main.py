@@ -174,7 +174,7 @@ def statistics_game():
         onClick=lambda: next_('start')
     )
     s = sql.get_session()
-    get_max = [0, 0, 0, 0, 0]
+    get_max = ["0", "0", "0", "0", "0"]
     rating = 0
     for i in s:
         if int(get_max[1]) <= i[1] and i[5] != "custom":
