@@ -192,6 +192,7 @@ def statistics_game():
     if title[1] == "":
         title[0] = "нет звания :("
         title[1] = "#EBAEAE"
+    rating = round(rating, 3)
     text = "Статистика игры"
     text1 = "Общие сведения:"
     text2 = "◆ Rating:"
