@@ -242,10 +242,11 @@ class Game:
             else:
                 txt = "▲"
                 txt = config.INFO_FONT_IS.render(txt, 1, config.GREEN)
-                intro_rect.x += 320
+                text_coord.x += 320
                 self.window.blit(txt, intro_rect)
-                intro_rect.x += 25
-                self.window.blit(string_v, intro_rect)
+                text_coord.x += 25
+                string_v = config.INFO_FONT.render(string_v, 1, config.WHITE)
+                self.window.blit(string_v, text_coord)
             events = pygame.event.get()
             pygame_widgets.update(events)
         self.window.blit(self.score_txt, self.score_pos)
