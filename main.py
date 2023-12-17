@@ -27,8 +27,7 @@ pygame.mixer.music.play(-1)
 
 def terminate():
     pygame.quit()
-    pdb.set_trace()
-    sys.exit()
+    sys.exit(0)
 
 def next_(arg1='start'):
     global widgets
