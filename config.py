@@ -8,8 +8,13 @@ from pygame import init
 
 init()
 # ==================================
-with open(f"{os.getcwd()}/config.json", 'r') as f:
-    json_config = json.load(f)
+try:
+
+    with open(f"{os.getcwd()}/config.json", 'r') as f:
+        json_config = json.load(f)
+except Exception as e:
+    with open(f"{os.getcwd()}/_internal/config.json", 'r') as f:
+        json_config = json.load(f)
 
 # Параметры окна
 X_MIN, Y_MIN = json_config["WINDOWS_SETTINGS"]["X_MIN"], json_config["WINDOWS_SETTINGS"]["Y_MIN"]

@@ -7,8 +7,10 @@ import sys
 import pygame
 import pygame_widgets
 import cv2
-from pygame_widgets.button import Button
 import threading
+import pdb
+
+from pygame_widgets.button import Button
 import config
 from resources.models.game import Game
 from resources.models.sql import SQL
@@ -24,8 +26,9 @@ pygame.mixer.music.play(-1)
 
 
 def terminate():
-    exit()
-
+    pygame.quit()
+    pdb.set_trace()
+    sys.exit()
 
 def next_(arg1='start'):
     global widgets

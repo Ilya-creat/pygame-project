@@ -1,8 +1,8 @@
 {
     "MODE": {
-        "OFFICIAL": true,
+        "OFFICIAL": false,
         "CUSTOM": false,
-        "DEBUG": false
+        "DEBUG": true
     },
     "WINDOWS_SETTINGS": {
         "X_MIN": 1280,
